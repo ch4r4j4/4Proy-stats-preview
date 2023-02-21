@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root{
+    --color-text:#fff;
+    --color-span: #fff;
+    --color-paragraph: #fff;
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,26 +14,47 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Lexend Deca', sans-serif;
 }
+
+.title{
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text);
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+.paragraph{
+    font-family: 'Inter', sans-serif;
+}
+
 .container{
     display: flex;
     background-color:  hsl(244, 38%, 16%);
-    width:68.6rem;
-    height: 27rem;
-    box-sizing: content-box;
+    width:68.24rem;
+    box-sizing: border-box;
+    height: 28.5rem;
+    border-radius: 10px;
 }
 .description{
-    padding: 5rem;
+    padding: 4.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    font-size: 1.05rem;
 }
 .statics{
     display: flex;
-    gap: 5.5rem;   
+    gap: 1rem;   
 }
-h1,p{
+.paraf-title{
+    text-transform: uppercase;
+}
+h1,h2,p{
     margin: 0;
+}
+.img-desktop{
+    height: 28.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .img-mobile{
     display: none;
