@@ -68,13 +68,13 @@ h1,h2,p,picture{
 }
 
 .image{
-    background: hsl(277, 64%, 61%);
-    opacity: 0.6;
+    background: rgb(171, 92, 219);
     overflow: hidden;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 img{
+    mix-blend-mode: multiply;
     opacity: 0.75;
 }
 
@@ -116,7 +116,7 @@ img{
         display: none;
     }
     .img-mobile{
-        display: inline-block;
+        display: block;
         width: 100%;
     }
 }
