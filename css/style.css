@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 :root{
-    --color-text:#fff;
-    --color-span: #fff;
-    --color-paragraph: #fff;
+    --color-statsheading:hsla(0, 0%, 100%, 0.6);
+    --color-titleheadign:hsl(0, 0%, 100%) ;
+    --color-span: hsl(277, 64%, 61%);
+    --color-paragraph: hsla(0, 0%, 100%, 0.75);
 }
 body{
     margin: 0;
@@ -13,20 +14,23 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     font-family: 'Lexend Deca', sans-serif;
 }
 
 .title{
     font-family: 'Inter', sans-serif;
-    color: var(--color-text);
+    color: var(--color-titleheadign);
     font-weight: 700;
     font-size: 2.3rem;
 }
 .paragraph{
     font-family: 'Inter', sans-serif;
+    line-height: 1.6rem;
+    color: var(--color-paragraph);
 }
-
+.insights{
+    color: var(--color-span);
+}
 .container{
     display: flex;
     background-color:  hsl(244, 38%, 16%);
@@ -36,29 +40,45 @@ body{
     border-radius: 10px;
 }
 .description{
-    padding: 4.5rem;
+    padding: 4rem 4.9rem 4rem 4.5rem;
     display: flex;
     flex-direction: column;
+    width: 34.24rem;
+    justify-content: space-between;
     font-size: 1.05rem;
 }
 .statics{
     display: flex;
-    gap: 1rem;   
+    gap: 3rem; 
+    font-family: 'Inter', sans-serif;
+    margin-top: 2.4rem;
 }
 .paraf-title{
     text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--color-statsheading);
 }
-h1,h2,p{
+.pin-title{
+    color: var(--color-titleheadign);
+}
+h1,h2,p,picture{
     margin: 0;
 }
-.img-desktop{
+section{
     height: 28.5rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    width:48rem;
+    padding: 0;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
-.img-mobile{
-    display: none;
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28.5rem;
+    width: 48rem;
+    background: hsl(276, 52%, 23%);
+    opacity: 0.6;
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
